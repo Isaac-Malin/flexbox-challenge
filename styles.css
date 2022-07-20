@@ -5,6 +5,7 @@
     justify-content: space-between;
     color: white;
     font-size: 25px;
+    width: 100vw;
 }
 
 #links > .logo {
@@ -31,21 +32,40 @@
     color: red;
 }
 
-.panels {
-    border: 2px solid black;
-    margin: 1vh;
-    align-items: flex-start;
-    width: 140vh;
-
+.wrapper {
+    display: flex;
 }
 
-.content > .right-hand {
+.left {
+    flex: 2;
+}
+
+.left > .one {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.left > .two {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.left > .three {
+    border: 2px solid black;
+    margin: 10px;
+    width: 164vh;
+}
+
+.right {
+    flex: 1;
+}
+
+.right > .right-one {
     display: flex;
     border: 2px solid black;
+    margin: 10px;
+    height: 47vh;
     flex-direction: column;
-    height: 450px;
-    width: 300px;
-    margin-left: 150vh;
+    width: 34vh;
 }
-
 
